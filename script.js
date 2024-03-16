@@ -13,7 +13,8 @@ function createGrid() {
       gridItem.style.flex = `${100 / columns}%`;
       gridContainer.appendChild(gridItem);
       gridItem.addEventListener('mouseover', () => {
-        gridItem.style.backgroundColor = 'palegreen';
+        randomColor = randomRgbColor();
+        gridItem.style.backgroundColor = randomColor;
         gridItem.style.opacity = '0.6';
       });
     }
@@ -31,3 +32,9 @@ function resetGame() {
   createGrid();
 };
 
+function randomRgbColor() {
+  let x = Math.floor(Math.random() * 256);
+  let y = Math.floor(Math.random() * 256);
+  let z = Math.floor(Math.random() * 256);
+  return "rgb(" + x + "," + y + "," + z + ")";
+};

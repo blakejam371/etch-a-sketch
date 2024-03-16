@@ -7,15 +7,15 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  font-size: 1em;
+  font-size: 0.25em;
+  display: flex;
   flex-direction: column;
-
 }
 
 #container {
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 95vh;
 }
 
 .grid-item {
@@ -23,6 +23,10 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  flex: 6.25%;
   border: solid 0.1px rgb(77, 77, 77);
+}
+
+#reset-button {
+  background-color: palegoldenrod;
+  height: 5vh;
 }

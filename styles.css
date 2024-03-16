@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  color: white;
+  color: rgb(77, 77, 77);
 }
 
 body {
@@ -19,8 +19,10 @@ body {
 }
 
 .grid-item {
-  background-color: rgb(77, 77, 77);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
-  text-align: center;
   flex: 6.25%;
+  border: solid 0.1px rgb(77, 77, 77);
 }

@@ -19,9 +19,6 @@ body {
 }
 
 .grid-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 10px;
   border: solid 0.1px rgb(77, 77, 77);
 }

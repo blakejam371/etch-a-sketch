@@ -5,9 +5,9 @@ const resetButton = document.querySelector('#reset-button');
 createGrid();
 
 function createGrid() {
+  resetButton.addEventListener('click', resetGame);
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < columns; j++) {
-      resetButton.addEventListener('click', resetGame);
       const gridItem = document.createElement('div');
       gridItem.className = 'grid-item';
       gridItem.style.flex = `${100 / columns}%`;
